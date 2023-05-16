@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body class="m-profile">
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header-profile.html
+		<main class="page-content">
+			<div class="container">
+                <div class="page-title">
+                    <h3>
+                        <a href="#" class="btn-back">Назад</a>
+                        <span>Создание конфигурации</span>
+                    </h3>
+                </div>
+				<div class="conf-view">
+                    <form action="#" method="post">
+                        <div class="conf-view__item active">
+                            <div class="conf-view__title">
+                                Параметры проема
+                            </div>
+                            <div class="conf">
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Тип
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="radio-list">
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio1" name="radio-987">
+                                                <label for="radio1">
+                                                    Накладной на профильную трубу
+                                                </label>
+                                            </div>
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio2" name="radio-987">
+                                                <label for="radio2">
+                                                    Изнутри
+                                                </label>
+                                            </div>
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio3" name="radio-987">
+                                                <label for="radio3">
+                                                    Изнутри и снаружи
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Высота, мм
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="conf__wrap">
+                                            <input type="text" id="conf-select-input" value="2000" />
+                                            <div class="conf-select-count-wrap">
+                                                <div class="conf-select-count" id="conf-select-count"></div>
+                                                <div class="conf-select-count-values">
+                                                    <div class="conf-select-count-values__item">0</div>
+                                                    <div class="conf-select-count-values__item">6000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Ширина, мм
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="conf__wrap">
+                                            <input type="text" id="conf-select-input2" value="2200" />
+                                            <div class="conf-select-count-wrap">
+                                                <div class="conf-select-count" id="conf-select-count2"></div>
+                                                <div class="conf-select-count-values">
+                                                    <div class="conf-select-count-values__item">0</div>
+                                                    <div class="conf-select-count-values__item">6000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Открытие
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="radio-list">
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio4" name="radio-988">
+                                                <label for="radio4">
+                                                    Изнутри и снаружи
+                                                </label>
+                                            </div>
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio5" name="radio-988">
+                                                <label for="radio5">
+                                                    Изнутри
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Створки
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="radio-list">
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio6" name="radio-989">
+                                                <label for="radio6">
+                                                    Встроенный
+                                                </label>
+                                            </div>
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio7" name="radio-989">
+                                                <label for="radio7">
+                                                    Накладной на уголок
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Рабочая створка
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="radio-list">
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio8" name="radio-990">
+                                                <label for="radio8">
+                                                    Левая
+                                                </label>
+                                            </div>
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio9" name="radio-990">
+                                                <label for="radio9">
+                                                    Правая
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conf-view__item active">
+                            <div class="conf-view__title">
+                                Цвета
+                            </div>
+                            <div class="conf">
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Цвет ворот внешней стороны
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="select-color-wrap">
+                                            <select class="color-htmlselect" id="color-htmlselect1">
+                                                <option value="0" data-imagesrc="img/content/ral1.png" selected>RAL 1032</option>
+                                                <option value="1" data-imagesrc="img/content/ral2.png">RAL 1033</option>
+                                                <option value="2" data-imagesrc="img/content/ral3.png">RAL 1034</option>
+                                                <option value="3" data-imagesrc="img/content/ral4.png">RAL 1035</option>
+                                                <option value="4" data-imagesrc="img/content/ral5.png">RAL 1036</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Цвет ворот внутренней стороны
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="select-color-wrap">
+                                            <select class="color-htmlselect" id="color-htmlselect2">
+                                                <option value="0" data-imagesrc="img/content/ral1.png" selected>RAL 1032</option>
+                                                <option value="1" data-imagesrc="img/content/ral2.png">RAL 1033</option>
+                                                <option value="2" data-imagesrc="img/content/ral3.png" selected>RAL 1034</option>
+                                                <option value="3" data-imagesrc="img/content/ral4.png">RAL 1035</option>
+                                                <option value="4" data-imagesrc="img/content/ral5.png">RAL 1036</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Цвет рамы ворот
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="select-color-wrap">
+                                            <select class="color-htmlselect" id="color-htmlselect3">
+                                                <option value="0" data-imagesrc="img/content/ral1.png">RAL 1032</option>
+                                                <option value="1" data-imagesrc="img/content/ral2.png">RAL 1033</option>
+                                                <option value="2" data-imagesrc="img/content/ral3.png">RAL 1034</option>
+                                                <option value="3" data-imagesrc="img/content/ral4.png" selected>RAL 1035</option>
+                                                <option value="4" data-imagesrc="img/content/ral5.png">RAL 1036</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conf-view__item">
+                            <div class="conf-view__title">
+                                Калитка
+                                <div class="conf-view-switch">
+                                    <input type="checkbox" id="switch1" class="checkbox-view-toggle js-checkbox-view-toggle"/>
+                                    <label for="switch1"></label>
+                                </div>
+                            </div>
+                            <div class="conf">
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Доводчик
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="conf-view-switch">
+                                            <input type="checkbox" id="switch322" class="checkbox-view-toggle"/>
+                                            <label for="switch322"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Тип замка
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="radio-list">
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio14" name="radio-993">
+                                                <label for="radio14">
+                                                    Механический
+                                                </label>
+                                            </div>
+                                            <div class="radio-item">
+                                                <input type="radio" id="radio15" name="radio-993">
+                                                <label for="radio15">
+                                                    Антипаника
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conf-view__item">
+                            <div class="conf-view__title">
+                                Окна
+                                <div class="conf-view-switch">
+                                    <input type="checkbox" id="switch2" class="checkbox-view-toggle js-checkbox-view-toggle"/>
+                                    <label for="switch2"></label>
+                                </div>
+                            </div>
+                            <div class="conf">
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Количество окон
+                                    </div>
+                                    <div class="conf__select">
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5" selected>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Варианты окон
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="conf-variants">
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var14" name="variants-993">
+                                                    <label for="var14">
+                                                        <img src="img/content/var1.jpeg" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var15" name="variants-993">
+                                                    <label for="var15">
+                                                        <img src="img/content/var2.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var16" name="variants-993">
+                                                    <label for="var16">
+                                                        <img src="img/content/var3.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var17" name="variants-993">
+                                                    <label for="var17">
+                                                        <img src="img/content/var4.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Размер окна
+                                    </div>
+                                    <div class="conf__select">
+                                        <select>
+                                            <option value="1">210х320</option>
+                                            <option value="2">220х320</option>
+                                            <option value="3">230х320</option>
+                                            <option value="4">240х320</option>
+                                            <option value="5" selected>250х320</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conf-view__item">
+                            <div class="conf-view__title">
+                                Панорамная вставка
+                                <div class="conf-view-switch">
+                                    <input type="checkbox" id="switch3" class="checkbox-view-toggle js-checkbox-view-toggle"/>
+                                    <label for="switch3"></label>
+                                </div>
+                            </div>
+                            <div class="conf">
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Ширина вставки, м<sup>2</sup>
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="conf__wrap">
+                                            <input type="text" id="conf-select-input3" value="2.21" />
+                                            <div class="conf-select-count-wrap">
+                                                <div class="conf-select-count" id="conf-select-count3"></div>
+                                                <div class="conf-select-count-values">
+                                                    <div class="conf-select-count-values__item">2</div>
+                                                    <div class="conf-select-count-values__item">3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Варианты панорамных вставок
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="conf-variants">
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var21" name="variants-994">
+                                                    <label for="var21">
+                                                        <img src="img/content/var1.jpeg" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var18" name="variants-994">
+                                                    <label for="var18">
+                                                        <img src="img/content/var2.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var19" name="variants-994">
+                                                    <label for="var19">
+                                                        <img src="img/content/var3.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var20" name="variants-994">
+                                                    <label for="var20">
+                                                        <img src="img/content/var4.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conf-view__item">
+                            <div class="conf-view__title">
+                                Вентиляционная решетка
+                                <div class="conf-view-switch">
+                                    <input type="checkbox" id="switch4" class="checkbox-view-toggle js-checkbox-view-toggle"/>
+                                    <label for="switch4"></label>
+                                </div>
+                            </div>
+                            <div class="conf">
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Варианты решеток
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="conf-variants">
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var22" name="variants-995">
+                                                    <label for="var22">
+                                                        <img src="img/content/var1.jpeg" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var23" name="variants-995">
+                                                    <label for="var23">
+                                                        <img src="img/content/var2.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var24" name="variants-995">
+                                                    <label for="var24">
+                                                        <img src="img/content/var3.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="conf-variants__item">
+                                                <div class="conf-variants__in">
+                                                    <input type="radio" id="var25" name="variants-995">
+                                                    <label for="var25">
+                                                        <img src="img/content/var4.png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conf-view__item active">
+                            <div class="conf-view__title">
+                                Расчет стоимости
+                                <div class="conf-view-calculate">
+                                    <a href="#" class="btn-calculate">Рассчитать стоимость</a>
+                                </div>
+                            </div>
+                            <div class="conf m-total">
+                                <div class="conf__item">
+                                    <div class="conf__pre">
+                                        Итого:
+                                    </div>
+                                    <div class="conf__select">
+                                        <div class="total">
+                                            <div class="total__item">
+                                                <div class="total__price">
+                                                    513.00 <span>руб</span>
+                                                </div>
+                                                <div class="total__title">Закупочная стоимость</div>
+                                            </div>
+                                            <div class="total__item">
+                                                <div class="total__price">
+                                                    533.00 <span>руб</span>
+                                                </div>
+                                                <div class="total__title">Рекомендованная розничная стоимость</div>
+                                            </div>
+                                        </div>
+                                        <div class="total-buttons">
+                                            <div class="total-buttons__item">
+                                                <a href="#" class="total-buttons__link">Сохранить конфигурацию</a>
+                                            </div>
+                                            <div class="total-buttons__item">
+                                                <a href="#" class="total-buttons__link">Получить коммерческое предложение</a>
+                                            </div>
+                                        </div>
+                                        <input type="submit" value="Оформить заказ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+				</div>
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	//= template/footer.html
+	<script src="js/libs/libs.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

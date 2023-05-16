@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header.html
+		<main class="page-content">
+			<div class="container">
+				<div class="page-view">
+					<div class="page-top">
+						<h2>Регистрация</h2>
+						<a href="#" class="page-top__link">Вход</a>
+					</div>
+					<form action="#" method="post">
+						<div class="input-item">
+							<div class="country">
+								<a href="#" class="country-toggle js-country-toggle">
+									<div class="country-toggle__icon"></div>
+									<div class="country-toggle__txt">
+										Выберите страну
+									</div>
+								</a>
+								<div class="country-view-list">
+									<a href="#" class="country-view-item js-country-view-item">
+										<div class="country-view-icon">
+											<img src="img/content/belarus.png" alt="">
+										</div>
+										<div class="country-view-txt">
+											Беларусь
+										</div>
+									</a>
+
+									<a href="#" class="country-view-item js-country-view-item">
+										<div class="country-view-icon">
+											<img src="img/content/russia.png" alt="">
+										</div>
+										<div class="country-view-txt">
+											Россия
+										</div>
+									</a>
+							
+									<a href="#" class="country-view-item js-country-view-item m-disabled">
+										<div class="country-view-icon">
+											<img src="img/content/kz.png" alt="">
+										</div>
+										<div class="country-view-txt">
+											Казахстан
+										</div>
+									</a>
+							
+									<a href="#" class="country-view-item js-country-view-item m-disabled">
+										<div class="country-view-icon">
+											<img src="img/content/ge.png" alt="">
+										</div>
+										<div class="country-view-txt">
+											Грузия
+										</div>
+									</a>
+								
+									<a href="#" class="country-view-item js-country-view-item m-disabled">
+										<div class="country-view-icon">
+											<img src="img/content/tj.png" alt="">
+										</div>
+										<div class="country-view-txt">
+											Таджикистан
+										</div>
+									</a>
+								
+									<a href="#" class="country-view-item js-country-view-item m-disabled">
+										<div class="country-view-icon">
+											<img src="img/content/uz.png" alt="">
+										</div>
+										<div class="country-view-txt">
+											Узбекистан
+										</div>
+									</a>
+								</div>
+							
+									
+								
+							</div>
+						</div>
+                        <div class="input-item">
+							<label for="name">
+								<input type="text" id="name" placeholder="Фамилия, имя и отчество">
+								<span class="input-item__label">Фамилия, имя и отчество</span>
+							</label>
+						</div>
+                        <div class="input-item">
+							<label for="company">
+								<input type="text" id="company" placeholder="Название компании">
+								<span class="input-item__label">Название компании</span>
+							</label>
+						</div>
+
+                        <div class="input-item">
+							<label for="phone__ind">
+								<input type="tel" id="phone__ind" placeholder="+375 (__) ___-__-__">
+								<span class="input-item__label">Телефон для связи</span>
+							</label>
+						</div>
+						<div class="input-item">
+							<label for="email">
+								<input type="email" id="email" placeholder="E-mail">
+								<span class="input-item__label">E-mail</span>
+							</label>
+						</div>
+						<div class="input-item">
+							<label for="password">
+								<input type="password" id="password" placeholder="Пароль">
+								<span class="input-item__label">Пароль</span>
+							</label>
+						</div>
+                        <div class="input-item">
+							<div class="checkbox-item">
+								<input type="checkbox" id="checkbox133" name="checkbox" class="check-error">
+								<label for="checkbox133">
+									Регистрируясь, вы подтверждаете, что принимаете условия <a href="#">Пользовательского соглашения</a> и <a href="#">Политики обработки персональных данных</a>, даете Поручение и Согласие на обработку персональных данных
+								</label>
+							</div>
+                        </div>
+						<div class="input-item">
+							<input type="submit" value="Зарегистрироваться">
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	//= template/footer.html
+
+	<script src="js/libs/libs.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

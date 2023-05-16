@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body class="m-profile">
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header-profile.html
+		<main class="page-content">
+			<div class="container">
+                <div class="page-title">
+                    <h3>Профиль</h3>
+                </div>
+				<div class="page-view">
+					<form action="#" method="post">
+                        <div class="page-view__wrap">
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="name">
+                                            <input type="text" id="name" placeholder="Фамилия, имя и отчество" value="Алексеев Петр Юрьевич">
+                                            <span class="input-item__label">Фамилия, имя и отчество</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="company">
+                                            <input type="text" id="company" placeholder="Название компании" value="ООО Ритерна">
+                                            <span class="input-item__label">Название компании</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="phone__ind">
+                                            <input type="tel" id="phone__ind" placeholder="+375 (__) ___-__-__" value="+375 (17) 812-00-72">
+                                            <span class="input-item__label">Контактный телефон</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="email">
+                                            <input type="email" id="email" placeholder="E-mail" value="ryterna@ryterna.by">
+                                            <span class="input-item__label">E-mail</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="unp">
+                                            <input type="text" id="unp" placeholder="УНП" value="192485489">
+                                            <span class="input-item__label">УНП</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="ua">
+                                            <input type="text" id="ua" placeholder="Юридический адрес" value="Республика Беларусь, 220113, г.Минск, ул.Мележа, дом 1">
+                                            <span class="input-item__label">Юридический адрес</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="rs">
+                                            <input type="text" id="rs" placeholder="Расчетный счет" value="BY67PJCB30120517471000000912">
+                                            <span class="input-item__label">Расчетный счет</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="bank">
+                                            <input type="text" id="bank" placeholder="Банк" value="ОАО «Приорбанк»">
+                                            <span class="input-item__label">Банк</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="bank-a">
+                                            <input type="text" id="bank-a" placeholder="Адрес банка" value="220002, г.Минск, ул.В.Хоружей, 31А">
+                                            <span class="input-item__label">Адрес банка</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="bic">
+                                            <input type="text" id="bic" placeholder="BIC" value="PJCBBY2X">
+                                            <span class="input-item__label">BIC</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="old_password">
+                                            <input type="password" id="old_password" placeholder="Старый пароль">
+                                            <span class="input-item__label">Старый пароль</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-view__item">
+                                <div class="page-view__in">
+                                    <div class="input-item">
+                                        <label for="new_password">
+                                            <input type="password" id="new_password" placeholder="Новый пароль">
+                                            <span class="input-item__label">Новый пароль</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                                  
+                            <div class="file-upload">
+                                <span class="file-upload__btn">Загрузить логотип</span>
+                                <input type="file" name="FileAttachment" id="FileAttachment" class="upload" />
+                                <input type="text" id="fileuploadurl" readonly placeholder="Maximum file size is 1GB">
+                            </div>
+                            <script>
+                                document.getElementById("FileAttachment").onchange = function () {
+                                    document.getElementById("fileuploadurl").value = this.value;
+                                };
+                            </script>
+                                
+                          
+                        </div>
+                        
+                        
+
+                        
+						
+						
+						<div class="input-item">
+							<input type="submit" value="Сохранить изменения">
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	//= template/footer.html
+
+	<script src="js/libs/libs.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

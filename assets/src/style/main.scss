@@ -1,0 +1,19 @@
+@import "variables";
+
+// Подключение нужных SCSS исходников Bootstrap
+@import "bootstrap/normalize";
+
+@import "components/body";
+@import "components/header";
+
+// Подключение своих SCSS файлов
+@import "style";
+
+
+
+//COMPONENTS
+@import "components/footer";
+@import "components/media";
+
+
+

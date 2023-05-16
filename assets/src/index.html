@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header.html
+		<main class="page-content">
+			<div class="container">
+				<div class="page-view">
+					<div class="page-top">
+						<h2>Вход</h2>
+						<a href="#" class="page-top__link">Регистрация</a>
+					</div>
+					<form action="#" method="post">
+						<div class="input-item">
+							<label for="email">
+								<input type="email" id="email" placeholder="E-mail">
+								<span class="input-item__label">E-mail</span>
+							</label>
+						</div>
+						<div class="input-item">
+							
+							<label for="password">
+								<input type="password" id="password" placeholder="Пароль">
+								<span class="input-item__label">Пароль</span>
+							</label>
+						</div>
+
+
+						<div class="input-item">
+							<div class="checkbox-item">
+								<input type="checkbox" id="checkbox123" name="checkbox" class="check-error">
+								<label for="checkbox123">
+									Запомнить меня на этом компьютере
+								</label>
+							</div>
+						</div>
+						<div class="input-item">
+							<input type="submit" value="Войти" disabled>
+						</div>
+						<div class="t-center">
+							<a href="#">Забыли свой пароль?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div><!-- END LAYOUT-->
+	//= template/footer.html
+
+	<script src="js/libs/libs.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+
+	<script>
+		$(function() {
+			enable_cb();
+			$("#checkbox123").click(enable_cb);
+		});
+
+		function enable_cb() {
+			if (this.checked) {
+				$("input[type='submit']").removeAttr("disabled");
+			} else {
+				$("input[type='submit']").attr("disabled", true);
+			}
+		}
+	</script>
+</body>
+</html>

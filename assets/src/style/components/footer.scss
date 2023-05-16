@@ -1,0 +1,16 @@
+.page-footer{
+	flex-shrink: 0;
+	font-weight: 400;
+	padding: 40px 0;
+	&__wrap{
+		display: flex;
+		justify-content: center;
+	}
+	&__item{
+		margin-right: 62px;
+		color: #282839;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
