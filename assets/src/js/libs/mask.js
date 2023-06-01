@@ -8,7 +8,7 @@
 
 	var check = function (it) {
 	  return it && it.Math == Math && it;
-	}; // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+	};
 
 
 	var global$p = // eslint-disable-next-line es/no-global-this -- safe

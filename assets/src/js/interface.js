@@ -6,15 +6,15 @@ $(document).ready(function() {
 	});
 
 
-	const phone__ind = document.getElementById('phone__ind');
+	//const phone__ind = document.getElementById('phone__ind');
 	//Phone-mask
-	if (typeof (phone__ind) != 'undefined' && phone__ind != null) {
-		var phoneMask = IMask(
-			document.getElementById('phone__ind'), {
+	if($('#phone__ind').length>0){
+		var phone__ind = document.getElementById('phone__ind');
+		var maskOptions = {
 			mask: '+{375} (00) 000-00-00',
 			lazy: false,
-		}
-		);
+		};
+		var mask = IMask(phone__ind, maskOptions);
 	}
 
 
@@ -36,12 +36,16 @@ $(document).ready(function() {
 
 
 	if ($("#conf-select-count").length > 0) {
+
+		var confHeight = $('#conf-select-input').data("height");
+		$("#conf-select-input").val(confHeight);
+
 		$("#conf-select-count").slider({
 			animate: true,
 			range: "min",
-			value: 2000,
-			min: 0,
-			max: 6000,
+			value: confHeight,
+			min: 2200,
+			max: 4500,
 			step: 1,
 			slide: function (event, ui) {
 				$("#conf-select-input").val(ui.value);
@@ -52,12 +56,15 @@ $(document).ready(function() {
 		});
 	};
 	if ($("#conf-select-count2").length > 0) {
+		var confWidth = $('#conf-select-input2').data("width");
+		$("#conf-select-input2").val(confWidth);
+
 		$("#conf-select-count2").slider({
 			animate: true,
 			range: "min",
-			value: 2200,
-			min: 0,
-			max: 6000,
+			value: confWidth,
+			min: 1900,
+			max: 4500,
 			step: 1,
 			slide: function (event, ui) {
 				$("#conf-select-input2").val(ui.value);
@@ -112,6 +119,20 @@ $(document).ready(function() {
 
 			$('.country-toggle').removeClass('active');
 			$('.country-view-list').slideUp(200);
+
+			
+			if(toggledTxtAct.split(/\s+/).join('')=="Беларусь"){
+				mask.updateOptions({
+					mask: '+{375} (00) 000-00-00',
+					lazy: false,
+				});  
+			}
+			if(toggledTxtAct.split(/\s+/).join('')=="Россия"){
+				mask.updateOptions({
+					mask: '+{7} (000) 000-00-00',
+					lazy: false,
+				}); 
+			}
 		});
 		$(document).click( function(e){
 			var div = $( ".country" );

@@ -130,6 +130,29 @@
 	.select-color-wrap {
 		width: 100%;
 	}
+	&.m-error{
+		input[type=email],
+		input[type=password],
+		input[type=tel],
+		input[type=text],
+		.country-toggle{
+			border: 1px solid red;
+		}
+		.error-msg{
+			display: block;
+		}
+	}
+}
+.error-msg{
+    text-align: right;
+    color: red;
+    font-size: 10px;
+    padding: 1px 0 0 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
 }
 
 label:focus-within > .input-item__label,
