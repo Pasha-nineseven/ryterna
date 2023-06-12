@@ -130,6 +130,12 @@
     .conf-variants {
         margin: 0 -6px;
     }
+    // .windows-switch {
+    //     width: 50%;
+    // }
+    .windows-switch input[type=checkbox]:checked+label, .windows-switch input[type=checkbox]:not(:checked)+label{
+        width: 44px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -264,10 +270,37 @@
     .btn-calculate{
         width: 100%;
     }
+
+    .windows-view__tr {
+        display: flex;
+            flex-wrap:wrap;
+        &.m-top{
+            padding-top: 0;
+            
+            .windows-view__pre{
+                padding-top: 0;
+                padding-right: 0;
+            }
+            
+        }
+    }
+    .windows-view__pre{
+        display: block;
+        width: 100%;
+        min-width: 100%;
+    }
+    .windows-view__aft{
+        // display: none;
+        width: 50%;
+    }
+    .windows-view__aft{
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 400px){
     .conf-variants__item {
         width: 50%;
     }
+    
 }
