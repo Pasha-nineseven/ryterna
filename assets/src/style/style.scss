@@ -361,6 +361,8 @@ input:not(:placeholder-shown) + .input-item__label{
 		display: flex;
 		align-items: flex-start;
 		margin-bottom: 32px;
+		position: relative;
+		z-index: 1;
 		&:last-child{
 			margin-bottom: 0;
 		}

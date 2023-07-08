@@ -13,5 +13,6 @@ $('body').append(
 		<li><a href="profile.html">Profile</a></li> \
 		<li><a href="configuration.html">Configuration</a></li> \
 		<li><a href="configuration-in.html">Configuration-in</a></li> \
+		<li><a href="politics.html">politics</a></li> \
 	</ol> \
 </div>');
